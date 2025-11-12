@@ -1,27 +1,46 @@
+// Couleurs principales
+$color-primary: #000000;
+$color-secondary: #ffffff;
+$color-accent: #982d3d;
 h1 {
   font-family: "Alexandria", sans-serif;
-  font-optical-sizing: auto;
-  color: #fff;
+  color: $color-secondary;
   text-align: center;
-
   font-size: 120px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
   letter-spacing: 7.3px;
   margin-top: 10%;
   margin-bottom: 10%;
 }
-
-p {
-  font-optical-sizing: auto;
-  color: #fff;
-  text-align: left;
-
-  font-family: "Bradley Hand";
-
-  font-size: 20px;
+h2 {
+  color: $color-primary;
+  font-family: "Alexandria", sans-serif;
+  font-size: 80px;
   font-style: normal;
-  font-weight: 00;
+  font-weight: 700;
   line-height: normal;
+}
+
+h3 {
+  color: $color-primary;
+  font-family: "Alexandria", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+h4 {
+  color: $color-primary;
+  font-family: "Alexandria", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+p {
+  font-family: "Bradley Hand";
+  font-size: 30px;
 }

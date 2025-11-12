@@ -2,38 +2,76 @@
 @import "base";
 @import "layout";
 @import "modules/example";
-// @import "bootstrap/scss/bootstrap-grid";
 
-/* Animation pulse */
+// ---- Animation pulse ----
+$pulse-duration: 1.6s;
+$pulse-scale: 1.05;
+$pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
 
-.pulse-container {
-  display: flex;
-  align-items: center;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale($pulse-scale);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse $pulse-duration $pulse-easing infinite;
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+
+  &.paused {
+    animation-play-state: paused;
+  }
+
+  .pulse-object {
+    img {
+      display: block;
+      width: 40%;
+
+      margin: 0 auto;
+
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse {
+    animation: none !important;
+  }
+}
+// ---- Animation button buy ----
+.market-button {
+  display: inline-flex;
+  height: 10%;
+
   justify-content: center;
-  height: 500px;
-  width: 100vh;
-}
+  align-items: center;
+  font-family: "Alexandria", sans-serif;
+  padding: 0.75rem 1.5rem;
+  border: 3px solid $color-primary;
+  background-color: $color-secondary;
+  color: $color-primary;
+  font-weight: 600;
+  // ---- Changement pour que ce soit mieux visible j'ai mis en capitale ----
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: none;
+  transition: all 0.3s ease;
 
-.pulse-object {
-  border-radius: 10px;
-
-  animation: slide-in 5s infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes slide-in {
-  0% {
-    transform: scale(50%);
+  &:hover {
+    background-color: $color-accent;
+    color: white;
+    border: 3px solid $color-accent;
   }
 
-  100% {
-    transform: scale(100%);
-  }
-
-  100% {
-    transform: scale(100%);
-  }
-  0% {
-    transform: scale(50%);
+  &:active {
+    transform: scale(0.97);
   }
 }

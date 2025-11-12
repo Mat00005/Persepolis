@@ -13,16 +13,14 @@
 .object-1 {
   width: 30%;
   height: 5vh;
-  opacity: 1;
 }
 .object-2 {
   width: 5%;
   height: 5vh;
-  opacity: 1;
+
   position: absolute;
   top: 10%;
   left: 10%;
-  z-index: 2;
 }
 .object-3 {
   width: 5%;
@@ -36,11 +34,10 @@
 .object-4 {
   width: 5%;
   height: 5vh;
-  opacity: 1;
+
   position: absolute;
   top: 40%;
   left: 30%;
-  z-index: 0;
 }
 .object-5 {
   width: 5%;
@@ -53,7 +50,7 @@
 .object-6 {
   width: 5%;
   height: 5vh;
-  opacity: 1;
+
   position: absolute;
   top: 75%;
   left: 20%;
@@ -62,7 +59,7 @@
 .object-7 {
   width: 5%;
   height: 5vh;
-  opacity: 1;
+
   position: absolute;
   top: 70%;
   left: 70%;
@@ -91,13 +88,104 @@
 }
 .marjane-hijab p {
   text-align: center;
-}
-.white img {
-  height: 100%;
-  width: 50%;
+  color: $color-secondary;
 }
 
 .white {
   background-color: $color-secondary;
   color: $color-primary;
+}
+
+.red {
+  background-color: $color-accent;
+}
+
+.angry-man {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.angry-man img {
+  height: 100%;
+  width: 53%;
+}
+
+.angry-man p {
+  color: $color-primary;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.manif-women-image {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.manif-women p {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.manif-fight {
+  width: 80%;
+  align-items: center;
+}
+
+.marjane-cry {
+  justify-content: end;
+  align-items: end;
+}
+
+.marjane-cry img {
+  height: 100%;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.marjane-think {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marjane-think img {
+  height: 100%;
+  width: 50%;
+  border-width: 10%;
+  border-color: $color-primary;
+}
+
+.marjane-fly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marjane-fly img {
+  height: 100%;
+  width: 50%;
+  border-width: 10%;
+  border-color: $color-primary;
+}
+
+.market {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.market-book {
+  height: 100%;
+  width: 50%;
+}
+
+.market-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+  margin-left: 5%;
 }
