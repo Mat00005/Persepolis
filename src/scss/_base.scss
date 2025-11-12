@@ -1,0 +1,63 @@
+// Couleurs principales
+$color-primary: #000000;
+$color-secondary: #ffffff;
+$color-accent: #982d3d;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+  width: 100%;
+  cursor: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+}
+
+// Curseur Customiser
+.slider {
+  width: 80%;
+}
+.cursor {
+  width: 15px;
+  height: 15px;
+  z-index: 11;
+  border-radius: 15px;
+  background: $color-accent;
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.cursor.link-hover {
+  background: $color-accent;
+  transform: scale(1.5);
+}
+
+body:hover .cursor {
+  opacity: 1;
+}
+
+header {
+  background-color: $color-primary;
+}

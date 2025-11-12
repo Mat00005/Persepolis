@@ -1,0 +1,39 @@
+@import "font";
+@import "base";
+@import "layout";
+@import "modules/example";
+// @import "bootstrap/scss/bootstrap-grid";
+
+/* Animation pulse */
+
+.pulse-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100vh;
+}
+
+.pulse-object {
+  border-radius: 10px;
+
+  animation: slide-in 5s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: scale(50%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+  0% {
+    transform: scale(50%);
+  }
+}

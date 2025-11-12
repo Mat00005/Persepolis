@@ -1,0 +1,103 @@
+.object-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.object-wrapper ~ .object-wrapper {
+  justify-content: end;
+}
+
+.object-1 {
+  width: 30%;
+  height: 5vh;
+  opacity: 1;
+}
+.object-2 {
+  width: 5%;
+  height: 5vh;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 2;
+}
+.object-3 {
+  width: 5%;
+  height: 5vh;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  z-index: 0;
+}
+.object-4 {
+  width: 5%;
+  height: 5vh;
+  opacity: 1;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  z-index: 0;
+}
+.object-5 {
+  width: 5%;
+  height: 5vh;
+  opacity: 1;
+  position: absolute;
+  top: 8%;
+  left: 70%;
+}
+.object-6 {
+  width: 5%;
+  height: 5vh;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+}
+
+.object-7 {
+  width: 5%;
+  height: 5vh;
+  opacity: 1;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
+
+// slider
+.h-50 {
+  height: 50vh;
+}
+.h-75 {
+  height: 75vh;
+}
+.h-100 {
+  height: 100vh;
+}
+
+.marjane-hijab img {
+  width: 40%;
+  margin-top: 5%;
+}
+
+.marjane-hijab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marjane-hijab p {
+  text-align: center;
+}
+.white img {
+  height: 100%;
+  width: 50%;
+}
+
+.white {
+  background-color: $color-secondary;
+  color: $color-primary;
+}
