@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Metadonnées -->
     <meta charset="utf-8" />
-    <link rel="icon" href="assets/favicon.webp" type="image/x-icon" />
-    <title>Persepolis</title>
+
+    <title>Persepolis - Storytelling Digital</title>
+    <meta
+      name="description"
+      content="Site sur la bande dessinée Persepolis pour le projet Storytelling digital 2025 eikon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <!-- Open Graph Metadonnées -->
+    <meta property="og:title" content="Persepolis - Storytelling Digital" />
+    <meta
+      property="og:description"
+      content="Site sur la bande dessinée Persepolis pour le projet Storytelling digital 2025 eikon"
+    />
+    <!-- <meta property="og:image" content="URL de l'image" /> -->
+    <!-- CSS -->
     <link rel="stylesheet" href="scss/main.scss" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,8 +34,9 @@
 
   <body>
     <main>
+      <!-- Corps en morceaux - Partie du corps se deplace au scroll -->
       <section class="red"></section>
-
+      <!-- Marjane réflechis - Pas d'animation -->
       <section class="white">
         <div class="marjane-think">
           <img
@@ -27,15 +45,21 @@
           />
         </div>
       </section>
+      <!-- Marjane vole - Zoom au scroll -->
       <section class="black">
-        <div class="marjane-fly">
+        <div class="marjane-fly zoom-container">
           <img
+            id="zoom-element"
+            class="zoom"
             src="assets/main/main-marjane-fly.webp"
             alt="Marjane Fly and Dream"
           />
         </div>
       </section>
-
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- Section Vente - Bouton animé -->
       <section class="white">
         <div class="market">
           <div class="market-info">
@@ -62,13 +86,13 @@
           </div>
         </div>
       </section>
-
+      <!-- Section d'information - Pas d'animation -->
       <section class="white">
-        <div class="market">
-          <div class="market-book">
+        <div class="bio">
+          <div class="bio-image">
             <img src="assets/footer/footer-marjane-now.jpg" alt="" />
           </div>
-          <div class="market-info">
+          <div class="bio-info">
             <h2>A Propos</h2>
             <h3>Marjane Satrapi</h3>
             <h4>
@@ -89,9 +113,7 @@
           </div>
         </div>
       </section>
-      <section class="black">
-        <div class="footer"></div>
-      </section>
+
       <section class="white">
         <div class="pulse">
           <div class="pulse-container">
@@ -101,10 +123,7 @@
           </div>
         </div>
       </section>
-    </main>
-    <!-- FOOTER -->
-    <footer></footer>
-
+    </footer>
     <div class="cursor"></div>
     <script src="js/main.js" type="module"></script>
   </body>

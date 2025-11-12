@@ -3,6 +3,7 @@ $color-primary: #000000;
 $color-secondary: #ffffff;
 $color-accent: #982d3d;
 
+// <!-- Générales -->
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,6 +33,33 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.white {
+  background-color: $color-secondary;
+  color: $color-primary;
+  overflow: hidden;
+}
+
+.black {
+  background-color: $color-primary;
+  color: $color-secondary;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.red {
+  background-color: $color-accent;
+}
+body:hover .cursor {
+  opacity: 1;
+}
+
+header {
   background-color: $color-primary;
 }
 
@@ -53,12 +81,4 @@ section {
 .cursor.link-hover {
   background: $color-accent;
   transform: scale(1.5);
-}
-
-body:hover .cursor {
-  opacity: 1;
-}
-
-header {
-  background-color: $color-primary;
 }

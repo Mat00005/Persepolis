@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Metadonnées -->
     <meta charset="utf-8" />
-    <link rel="icon" href="assets/favicon.webp" type="image/x-icon" />
-    <title>Persepolis</title>
+
+    <title>Persepolis - Storytelling Digital</title>
+    <meta
+      name="description"
+      content="Site sur la bande dessinée Persepolis pour le projet Storytelling digital 2025 eikon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <!-- Open Graph Metadonnées -->
+    <meta property="og:title" content="Persepolis - Storytelling Digital" />
+    <meta
+      property="og:description"
+      content="Site sur la bande dessinée Persepolis pour le projet Storytelling digital 2025 eikon"
+    />
+    <!-- <meta property="og:image" content="URL de l'image" /> -->
+    <!-- CSS -->
     <link rel="stylesheet" href="scss/main.scss" />
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +35,7 @@
   <body>
     <!-- HEADER -->
     <header>
+      <!-- Marjane dans les étoiles - Titre Parallaxe -->
       <section class="black">
         <div class="object-wrapper">
           <h1 class="text-header">PERSEPOLIS</h1>
@@ -27,49 +45,48 @@
               alt="Marjane Fly in the sky"
             />
           </div>
-          <div class="object-2" id="object-2">
+          <div class="object-2 object" id="object-2">
             <img src="assets/header/header-stars-1.webp" alt="Star" />
           </div>
-          <div class="object-3" id="object-3">
+          <div class="object-3 object" id="object-3">
             <img src="assets/header/header-stars-2.webp" alt="Star" />
           </div>
-          <div class="object-4" id="object-4">
+          <div class="object-4 object" id="object-4">
             <img src="assets/header/header-stars-3.webp" alt="Star" />
           </div>
-          <div class="object-5" id="object-5">
+          <div class="object-5 object" id="object-5">
             <img src="assets/header/header-stars-4.webp" alt="Star" />
           </div>
-          <div class="object-7" id="object-7">
+          <div class="object-7 object" id="object-7">
             <img src="assets/header/header-stars-5.webp" alt="Star" />
           </div>
-          <div class="object-6" id="object-6">
+          <div class="object-6 object" id="object-6">
             <img src="assets/header/header-stars-6.webp" alt="Star" />
           </div>
         </div>
       </section>
     </header>
-    <div class="spacer"></div>
+
     <!-- MAIN -->
     <main>
-      <section class="black">
-        <div class="slider">
-          <div class="slider-track">
-            <div class="slider-1">
-              <img src="assets/main/slider.webp" alt="schoolgirl" />
-            </div>
-            <!-- <div class="slider-2">
-              <img src="assets/slider.webp" alt="schoolgirl" />
-            </div>
-            <div class="slider-3">
-              <img src="assets/slider.webp" alt="schoolgirl" />
-            </div>
-            <div class="slider-4">
-              <img src="assets/slider.webp" alt="schoolgirl" />
-            </div> -->
+      <!-- Ecolière - Scrolling Horizontale -->
+      <section class="black slider-mask h-100">
+        <div class="slider-track">
+          <div class="screen screen-1">
+            <img src="assets/main/slider.webp" alt="schoolgirl" />
+          </div>
+          <div class="screen screen-2">
+            <img src="assets/main/slider.webp" alt="schoolgirl" />
+          </div>
+          <div class="screen screen-3">
+            <img src="assets/main/slider.webp" alt="schoolgirl" />
+          </div>
+          <div class="screen screen-4">
+            <img src="assets/main/slider.webp" alt="schoolgirl" />
           </div>
         </div>
       </section>
-
+      <!-- Marjane en hijab - Pas d'animation -->
       <section class="black">
         <div class="marjane-hijab">
           <p>ça c’est moi quand j’avais 10 ans</p>
@@ -79,14 +96,14 @@
           />
         </div>
       </section>
-
+      <!-- Hommme énervé - Effect Parallaxe -->
       <section class="white">
         <div class="angry-man">
           <p>et soudain en 1980 <br />il y a eu la révolution</p>
           <img src="assets/main/main-man.webp" alt="" />
         </div>
       </section>
-
+      <!-- Femme manifestant - Apparitions au scroll de coté -->
       <section class="white">
         <div class="manif-women">
           <p>Partout dans les rues il y avait <br />des manifestations</p>
@@ -102,7 +119,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Manifestation - Apparitions au scroll -->
       <section class="white">
         <div class="manif-fight">
           <img src="assets/main/main-police-man.webp" alt="" />
@@ -113,7 +130,7 @@
           <img src="assets/main/main-body-man.webp" alt="" />
         </div>
       </section>
-
+      <!-- Marjane pleure dans son lit - Pas d'animation -->
       <section class="black">
         <div class="marjane-cry">
           <img
@@ -122,18 +139,13 @@
           />
         </div>
       </section>
+      <!-- Journal invitant au clique - Animation Pulse -->
       <section class="white">
-        <div class="pulse">
-          <div class="pulse-container">
-            <a class="pulse-object" href="index-2.html">
-              <img src="assets/main/main-newspaper.webp" alt="Journal CTA" />
-            </a>
-          </div>
-        </div>
+        <a class="pulse-object pulse" href="index-2.html">
+          <img src="assets/main/main-newspaper.webp" alt="Journal CTA" />
+        </a>
       </section>
     </main>
-    <!-- FOOTER -->
-    <footer></footer>
 
     <div class="cursor"></div>
     <script src="js/main.js" type="module"></script>

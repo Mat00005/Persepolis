@@ -23,6 +23,7 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
 .pulse {
   animation: pulse $pulse-duration $pulse-easing infinite;
   transform-origin: center center;
+  width: 100%;
   transition: transform 0.3s ease;
 
   &.paused {
@@ -31,10 +32,7 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
 
   .pulse-object {
     img {
-      display: block;
       width: 40%;
-
-      margin: 0 auto;
 
       transition: transform 0.3s ease;
     }
@@ -46,6 +44,7 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
     animation: none !important;
   }
 }
+
 // ---- Animation button buy ----
 .market-button {
   display: inline-flex;
@@ -75,3 +74,109 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(0.97);
   }
 }
+
+.pulse-object {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+
+// slider
+.h-50 {
+  height: 50vh;
+}
+.h-75 {
+  height: 75vh;
+}
+.h-100 {
+  height: 100vh;
+}
+
+.slider-mask {
+  overflow: hidden;
+}
+
+.slider-track {
+  height: 100%;
+  display: inline-flex;
+
+  border-radius: 5px;
+}
+
+.slider-track .screen {
+  width: calc(100vw - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// zoom
+.zoom-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+}
+
+#zoom-element {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 40%;
+  left: 20%;
+  right: 20%;
+  height: 40%;
+}
+
+.parallax-container {
+  height: calc(100vh - 40px);
+  margin-block: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.parallax-element {
+  border: 3px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#element-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: rgba(194, 194, 194, 0.8);
+}
+
+#element-2 {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 25%;
+  height: 40%;
+  background: rgba(192, 192, 192, 0.8);
+}
+
+#element-3 {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  width: 10%;
+  height: 10%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+// Parallaxe
