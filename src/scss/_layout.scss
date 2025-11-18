@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .object-wrapper ~ .object-wrapper {
@@ -66,6 +67,47 @@
   left: 70%;
 }
 
+// .object {
+//   animation: levitate 3s ease-in-out infinite;
+// }
+
+// @keyframes levitate {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-3px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+// .object-1 {
+//   animation-delay: 0s;
+// }
+// .object-2 {
+//   animation-delay: 0.3s;
+// }
+// .object-3 {
+//   animation-delay: 0.6s;
+// }
+
+// .object-4 {
+//   animation-delay: 0.6s;
+// }
+// .object-5 {
+//   animation-delay: 0.6s;
+// }
+// .object-6 {
+//   animation-delay: 0.6s;
+// }
+// .object-7 {
+//   animation-delay: 0.6s;
+// }
+// .object-8 {
+//   animation-delay: 0.6s;
+// }
 // <!-- Ecolière - Scrolling Horizontale -->
 // slider
 .h-50 {
@@ -110,6 +152,7 @@
   margin-left: 10%;
   margin-top: 15%;
 }
+//  <!-- Femme Manifestant - Effect d'apparition sur le coté -->
 
 .manif-women-image {
   width: 50%;
@@ -122,6 +165,8 @@
   margin-top: 15%;
   margin-left: 10%;
 }
+
+//  <!-- Manifestation - Effect d'apparition opacity -->
 
 .manif-fight {
   width: 80%;
@@ -208,4 +253,173 @@
   flex-direction: column;
   gap: 2%;
   margin-right: 5%;
+}
+
+.red {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.main-body-part img {
+  width: 15%;
+}
+
+.main-body-left-arm {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+}
+
+.main-body-left-leg {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.main-body-right-arm {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+.main-body-right-leg {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.main-body-up {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+}
+
+.main-body-down {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+}
+
+.main-body-head {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+.zoom-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.zoom-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* CSS */
+#zoom-element-1 {
+  opacity: 0;
+}
+
+/* CSS */
+#zoom-element-2 {
+  opacity: 0;
+}
+//  <!-- Footer  -->
+.footer {
+  background-color: $color-primary;
+}
+
+.footer-informations {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer img {
+  height: 30%;
+  width: 15%;
+}
+
+.logo-asso {
+  width: 197px;
+  margin-bottom: 40px;
+  margin-top: 77px;
+}
+
+.foot-title {
+  margin-top: 77px;
+}
+
+.foot-title-number {
+  margin-top: 28px;
+}
+
+.button-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+footer {
+  background-color: co;
+}
+.footer-btn-dark {
+  margin-top: 20px;
+  display: flex;
+  width: 209px;
+  padding: 10px;
+  gap: 10px;
+  border: 3px solid #fff;
+}
+
+.footer-btn-white {
+  margin-top: 20px;
+  width: 111px;
+  padding: 10px;
+  gap: 10px;
+  border: 3px solid #000000;
+  background: #fff;
+}
+
+.logo-eikon {
+  margin-top: 77px;
+  height: 75px;
+  margin-bottom: 17px;
+}
+
+.logo-fribourg {
+  height: 147px;
+}
+
+#logos-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insta {
+  width: 2%;
+}
+
+.facebook {
+  width: 2%;
+}
+
+#follow-us {
+  margin-bottom: 67px;
+}
+
+.litle-txt {
+  margin-bottom: 50px;
+}
+
+#droits {
+  display: flex;
+  justify-content: end;
 }

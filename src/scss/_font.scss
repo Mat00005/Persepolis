@@ -43,7 +43,17 @@ h4 {
   line-height: normal;
   margin-bottom: 40px;
 }
-p {
+.narrative {
   font-family: "Bradley Hand";
   font-size: 30px;
+  color: $color-primary;
+}
+
+p {
+  color: $color-secondary;
+  font-family: "Alexandria", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
