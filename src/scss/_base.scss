@@ -75,6 +75,47 @@ header {
 }
 
 .cursor.link-hover {
-  background: $color-accent;
   transform: scale(1.5);
+}
+
+/* Curseur texte */
+.cursor-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+  z-index: 12;
+
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+#back-to-top {
+  display: inline-flex;
+  height: 10%;
+
+  justify-content: center;
+  align-items: center;
+  font-family: "Alexandria", sans-serif;
+  padding: 0.75rem 1.5rem;
+  border: 3px solid $color-primary;
+  background-color: $color-secondary;
+  color: $color-primary;
+  font-weight: 600;
+  // ---- Changement pour que ce soit mieux visible j'ai mis en capitale ----
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-accent;
+    color: $color-secondary;
+    border: 3px solid $color-accent;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 }

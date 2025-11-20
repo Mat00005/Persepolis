@@ -67,6 +67,11 @@
   left: 70%;
 }
 
+.object img {
+  transition: transform 0.9s ease-out;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
 // .object {
 //   animation: levitate 3s ease-in-out infinite;
 // }
@@ -166,6 +171,13 @@
   margin-left: 10%;
 }
 
+.translate-element-1 {
+  opacity: 0;
+}
+
+.translate-element-2 {
+  opacity: 0;
+}
 //  <!-- Manifestation - Effect d'apparition opacity -->
 
 .manif-fight {
@@ -176,7 +188,7 @@
 .manif-fight img {
   border: 3px solid $color-primary;
 }
-
+//  <!-- Marjane pleure - Pas d'effet -->
 .marjane-cry {
   justify-content: end;
   align-items: end;
@@ -187,7 +199,7 @@
   width: 50%;
   margin-left: 50%;
 }
-
+//  <!-- Marjane pense - Pas d'effet -->
 .marjane-think {
   display: flex;
   flex-direction: column;
@@ -201,7 +213,7 @@
   border-color: $color-primary;
   border: 3px solid $color-primary;
 }
-
+//  <!-- Marjane Fyling - Effect Zoom -->
 .marjane-fly {
   display: flex;
   flex-direction: column;
@@ -254,7 +266,10 @@
   gap: 2%;
   margin-right: 5%;
 }
-
+.about {
+  margin-bottom: 165px;
+}
+//  <!-- Hommme découper - Effect Translate -->
 .red {
   display: flex;
   flex-direction: column;
@@ -262,52 +277,62 @@
   position: relative;
 }
 
-.main-body-part img {
-  width: 15%;
-}
-
 .main-body-left-arm {
   position: absolute;
   top: 60%;
   left: 60%;
+  width: 15%;
 }
 
 .main-body-left-leg {
   position: absolute;
   top: 50%;
   left: 20%;
+  width: 15%;
 }
 
 .main-body-right-arm {
   position: absolute;
   top: 20%;
   left: 60%;
+  width: 15%;
 }
 
 .main-body-right-leg {
   position: absolute;
   top: 30%;
   left: 20%;
+  width: 15%;
 }
 
 .main-body-up {
   position: absolute;
   top: 40%;
   left: 55%;
+  width: 15%;
 }
 
 .main-body-down {
   position: absolute;
   top: 40%;
   left: 38%;
+  width: 14%;
 }
 
 .main-body-head {
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 70%;
+  width: 14%;
 }
 
+.main-body-part {
+  align-items: center;
+
+  height: 100%;
+  overflow: hidden;
+}
+//  <!-- Maniestation - Effect Zoom -->
 .zoom-container-1 {
   display: flex;
   justify-content: center;
@@ -322,14 +347,19 @@
   overflow: hidden;
 }
 
-/* CSS */
 #zoom-element-1 {
   opacity: 0;
 }
 
-/* CSS */
 #zoom-element-2 {
   opacity: 0;
+}
+
+.translate-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 //  <!-- Footer  -->
 .footer {
@@ -346,36 +376,33 @@
   width: 15%;
 }
 
-.logo-asso {
+.footer-logo-asso {
   width: 197px;
   margin-bottom: 40px;
   margin-top: 77px;
 }
 
-.foot-title {
+.footer-title {
   margin-top: 77px;
 }
 
-.foot-title-number {
+.footer-title-number {
   margin-top: 28px;
 }
 
-.button-subscribe {
+.footer-button-subscribe {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-footer {
-  background-color: co;
-}
 .footer-btn-dark {
   margin-top: 20px;
   display: flex;
   width: 209px;
   padding: 10px;
   gap: 10px;
-  border: 3px solid #fff;
+  border: 3px solid $color-secondary;
 }
 
 .footer-btn-white {
@@ -383,43 +410,34 @@ footer {
   width: 111px;
   padding: 10px;
   gap: 10px;
-  border: 3px solid #000000;
-  background: #fff;
+  border: 3px solid $color-primary;
+  background: $color-secondary;
 }
 
-.logo-eikon {
+.footer-logo-eikon {
   margin-top: 77px;
   height: 75px;
   margin-bottom: 17px;
 }
 
-.logo-fribourg {
+.footer-logo-fribourg {
   height: 147px;
 }
 
-#logos-right {
+#footer-logos-right {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.insta {
+#footer-follow-us svg {
   width: 2%;
 }
 
-.facebook {
-  width: 2%;
-}
-
-#follow-us {
+#footer-follow-us {
   margin-bottom: 67px;
 }
 
-.litle-txt {
-  margin-bottom: 50px;
-}
-
-#droits {
+#footer-right {
   display: flex;
   justify-content: end;
 }
