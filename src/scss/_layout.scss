@@ -72,49 +72,9 @@
   transform-style: preserve-3d;
   pointer-events: none;
 }
-// .object {
-//   animation: levitate 3s ease-in-out infinite;
-// }
 
-// @keyframes levitate {
-//   0% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(-3px);
-//   }
-//   100% {
-//     transform: translateY(0);
-//   }
-// }
-
-// .object-1 {
-//   animation-delay: 0s;
-// }
-// .object-2 {
-//   animation-delay: 0.3s;
-// }
-// .object-3 {
-//   animation-delay: 0.6s;
-// }
-
-// .object-4 {
-//   animation-delay: 0.6s;
-// }
-// .object-5 {
-//   animation-delay: 0.6s;
-// }
-// .object-6 {
-//   animation-delay: 0.6s;
-// }
-// .object-7 {
-//   animation-delay: 0.6s;
-// }
-// .object-8 {
-//   animation-delay: 0.6s;
-// }
 // <!-- Ecolière - Scrolling Horizontale -->
-// slider
+
 .h-50 {
   height: 50vh;
 }
@@ -139,6 +99,7 @@
 .marjane-hijab p {
   text-align: center;
   color: $color-secondary;
+  margin-top: 5%;
 }
 //  <!-- Hommme énervé - Effect Parallaxe -->
 .angry-man {
@@ -226,7 +187,7 @@
   border-width: 10%;
   border-color: $color-primary;
 }
-
+//  <!-- Section Vente - Bouton animé -->
 .market {
   display: flex;
   flex-direction: row;
@@ -245,7 +206,7 @@
   gap: 2%;
   margin-left: 5%;
 }
-
+// <!-- Section d'information - Pas d'animation -->
 .bio {
   display: flex;
   flex-direction: row;
@@ -362,8 +323,11 @@
   overflow: hidden;
 }
 //  <!-- Footer  -->
+
 .footer {
   background-color: $color-primary;
+  background-color: #000;
+  padding: 40px 60px;
 }
 
 .footer-informations {
@@ -372,8 +336,8 @@
 }
 
 .footer img {
-  height: 30%;
-  width: 15%;
+  width: 50%;
+  height: auto;
 }
 
 .footer-logo-asso {
@@ -402,6 +366,7 @@
   width: 209px;
   padding: 10px;
   gap: 10px;
+  color: $color-primary;
   border: 3px solid $color-secondary;
 }
 
@@ -412,6 +377,30 @@
   gap: 10px;
   border: 3px solid $color-primary;
   background: $color-secondary;
+
+  display: inline-flex;
+
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alexandria", sans-serif;
+
+  border: 3px solid $color-primary;
+  background-color: $color-secondary;
+  color: $color-primary;
+
+  cursor: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-accent;
+    color: $color-secondary;
+    border: 3px solid $color-accent;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 }
 
 .footer-logo-eikon {

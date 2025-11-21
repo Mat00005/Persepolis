@@ -4,6 +4,18 @@
 @import "modules/example";
 @import "bootstrap/scss/bootstrap-grid";
 
+// // Explications des changements
+
+// // Header
+// // Marjane est désormais centrée afin de la mettre davantage en valeur et d’améliorer l’harmonie de la composition générale.
+
+// // Main
+// // Les manifestantes apparaissent simultanément pour gagner du temps et rendre l’ensemble plus fluide.
+// // Un espace supplémentaire a été ajouté entre la section d’achat et la section d’informations sur Marjane,
+// afin de laisser respirer la mise en page après une histoire assez intense.
+// // Enfin, un bouton permettant de remonter directement l’histoire a été ajouté : c’est plus propre que de recharger la page
+//  et améliore l’expérience utilisateur.
+
 // ---- Animation pulse ----
 $pulse-duration: 1.6s;
 $pulse-scale: 1.05;
@@ -141,14 +153,13 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
   height: calc(100vh - 40px);
   margin-block: 10px;
   padding: 10px;
-  border: 5px solid black;
+
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8);
+
   position: relative;
 }
 
 .parallax-element {
-  border: 3px solid rgb(255, 0, 0);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -161,7 +172,6 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
   left: 0;
   right: 0;
   height: 70%;
-  background: rgba(194, 194, 194, 0.8);
 }
 
 #element-2 {
@@ -170,7 +180,6 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
   left: 40px;
   width: 25%;
   height: 40%;
-  background: rgba(192, 192, 192, 0.8);
 }
 
 #element-3 {
@@ -179,11 +188,41 @@ $pulse-easing: cubic-bezier(0.4, 0, 0.2, 1);
   right: 100px;
   width: 10%;
   height: 10%;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 // Parallaxe
 .pulse-object img {
   transition: transform 0.15s ease-out;
   will-change: transform;
+}
+// Bouton back to top
+#back-to-top {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alexandria", sans-serif;
+  padding: 0.75rem 1.5rem;
+  border: 3px solid $color-primary;
+  background-color: $color-secondary;
+  color: $color-primary;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-accent;
+    color: $color-secondary;
+    border: 3px solid $color-accent;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 }
