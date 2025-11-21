@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     y: "-80%",
     scrollTrigger: {
       trigger: "#object-4",
-      start: "top 20%%",
+      start: "top 20%",
       scrub: 1,
     },
   });
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     y: "-80%",
     scrollTrigger: {
       trigger: "#object-5",
-      start: "top 10%",
+      start: "top 8%",
       scrub: 1,
     },
   });
